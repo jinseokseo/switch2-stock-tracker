@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-07T01:46:57.261Z",
+  "updatedAt": "2026-07-07T01:50:03.318Z",
   "results": [
     {
       "productId": "switch2",
@@ -7,8 +7,9 @@
       "msrp": 648000,
       "retailer": "닌텐도 공식 스토어",
       "url": "https://store.nintendo.co.kr/beeskb6aakor",
-      "checkedAt": "2026-07-07T01:46:14.162Z",
+      "checkedAt": "2026-07-07T01:49:18.086Z",
       "price": 648000,
+      "priceApproximate": false,
       "priceAtOrBelowMsrp": true,
       "stock": "soldout",
       "error": null
@@ -19,8 +20,9 @@
       "msrp": 718000,
       "retailer": "닌텐도 공식 스토어",
       "url": "https://store.nintendo.co.kr/beeskb6nfkor",
-      "checkedAt": "2026-07-07T01:46:20.076Z",
+      "checkedAt": "2026-07-07T01:49:25.227Z",
       "price": 718000,
+      "priceApproximate": false,
       "priceAtOrBelowMsrp": true,
       "stock": "soldout",
       "error": null
@@ -31,8 +33,9 @@
       "msrp": 648000,
       "retailer": "쿠팡",
       "url": "https://www.coupang.com/vp/products/8825720068",
-      "checkedAt": "2026-07-07T01:46:25.564Z",
+      "checkedAt": "2026-07-07T01:49:31.901Z",
       "price": null,
+      "priceApproximate": false,
       "priceAtOrBelowMsrp": null,
       "stock": "unknown",
       "error": null
@@ -43,8 +46,9 @@
       "msrp": 718000,
       "retailer": "쿠팡",
       "url": "https://www.coupang.com/vp/products/9449804782",
-      "checkedAt": "2026-07-07T01:46:29.764Z",
+      "checkedAt": "2026-07-07T01:49:36.042Z",
       "price": null,
+      "priceApproximate": false,
       "priceAtOrBelowMsrp": null,
       "stock": "unknown",
       "error": null
@@ -55,8 +59,9 @@
       "msrp": 648000,
       "retailer": "11번가",
       "url": "https://www.11st.co.kr/products/8369248443",
-      "checkedAt": "2026-07-07T01:46:33.879Z",
-      "price": 410000,
+      "checkedAt": "2026-07-07T01:49:40.161Z",
+      "price": 648000,
+      "priceApproximate": false,
       "priceAtOrBelowMsrp": true,
       "stock": "soldout",
       "error": null
@@ -67,8 +72,9 @@
       "msrp": 718000,
       "retailer": "11번가",
       "url": "https://www.11st.co.kr/products/9242538403",
-      "checkedAt": "2026-07-07T01:46:42.149Z",
-      "price": 544380,
+      "checkedAt": "2026-07-07T01:49:47.787Z",
+      "price": 211680,
+      "priceApproximate": false,
       "priceAtOrBelowMsrp": true,
       "stock": "soldout",
       "error": null
@@ -79,8 +85,9 @@
       "msrp": 648000,
       "retailer": "G마켓",
       "url": "https://item.gmarket.co.kr/Item?goodscode=4448997273",
-      "checkedAt": "2026-07-07T01:46:48.406Z",
+      "checkedAt": "2026-07-07T01:49:54.512Z",
       "price": null,
+      "priceApproximate": false,
       "priceAtOrBelowMsrp": null,
       "stock": "unknown",
       "error": null
@@ -91,8 +98,9 @@
       "msrp": 648000,
       "retailer": "옥션",
       "url": "http://itempage3.auction.co.kr/DetailView.aspx?itemno=E962420166",
-      "checkedAt": "2026-07-07T01:46:52.851Z",
+      "checkedAt": "2026-07-07T01:49:58.881Z",
       "price": null,
+      "priceApproximate": false,
       "priceAtOrBelowMsrp": null,
       "stock": "unknown",
       "error": null
