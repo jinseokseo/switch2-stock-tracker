@@ -1,4 +1,101 @@
 {
-  "updatedAt": null,
-  "results": []
+  "updatedAt": "2026-07-07T01:46:57.261Z",
+  "results": [
+    {
+      "productId": "switch2",
+      "productName": "Nintendo Switch 2 (본체 단품)",
+      "msrp": 648000,
+      "retailer": "닌텐도 공식 스토어",
+      "url": "https://store.nintendo.co.kr/beeskb6aakor",
+      "checkedAt": "2026-07-07T01:46:14.162Z",
+      "price": 648000,
+      "priceAtOrBelowMsrp": true,
+      "stock": "soldout",
+      "error": null
+    },
+    {
+      "productId": "switch2-pokopia",
+      "productName": "Nintendo Switch 2 포켓몬 포코피아 에디션",
+      "msrp": 718000,
+      "retailer": "닌텐도 공식 스토어",
+      "url": "https://store.nintendo.co.kr/beeskb6nfkor",
+      "checkedAt": "2026-07-07T01:46:20.076Z",
+      "price": 718000,
+      "priceAtOrBelowMsrp": true,
+      "stock": "soldout",
+      "error": null
+    },
+    {
+      "productId": "switch2",
+      "productName": "Nintendo Switch 2 (본체 단품)",
+      "msrp": 648000,
+      "retailer": "쿠팡",
+      "url": "https://www.coupang.com/vp/products/8825720068",
+      "checkedAt": "2026-07-07T01:46:25.564Z",
+      "price": null,
+      "priceAtOrBelowMsrp": null,
+      "stock": "unknown",
+      "error": null
+    },
+    {
+      "productId": "switch2-pokopia",
+      "productName": "Nintendo Switch 2 포켓몬 포코피아 에디션",
+      "msrp": 718000,
+      "retailer": "쿠팡",
+      "url": "https://www.coupang.com/vp/products/9449804782",
+      "checkedAt": "2026-07-07T01:46:29.764Z",
+      "price": null,
+      "priceAtOrBelowMsrp": null,
+      "stock": "unknown",
+      "error": null
+    },
+    {
+      "productId": "switch2",
+      "productName": "Nintendo Switch 2 (본체 단품)",
+      "msrp": 648000,
+      "retailer": "11번가",
+      "url": "https://www.11st.co.kr/products/8369248443",
+      "checkedAt": "2026-07-07T01:46:33.879Z",
+      "price": 410000,
+      "priceAtOrBelowMsrp": true,
+      "stock": "soldout",
+      "error": null
+    },
+    {
+      "productId": "switch2-pokopia",
+      "productName": "Nintendo Switch 2 포켓몬 포코피아 에디션",
+      "msrp": 718000,
+      "retailer": "11번가",
+      "url": "https://www.11st.co.kr/products/9242538403",
+      "checkedAt": "2026-07-07T01:46:42.149Z",
+      "price": 544380,
+      "priceAtOrBelowMsrp": true,
+      "stock": "soldout",
+      "error": null
+    },
+    {
+      "productId": "switch2",
+      "productName": "Nintendo Switch 2 (본체 단품)",
+      "msrp": 648000,
+      "retailer": "G마켓",
+      "url": "https://item.gmarket.co.kr/Item?goodscode=4448997273",
+      "checkedAt": "2026-07-07T01:46:48.406Z",
+      "price": null,
+      "priceAtOrBelowMsrp": null,
+      "stock": "unknown",
+      "error": null
+    },
+    {
+      "productId": "switch2",
+      "productName": "Nintendo Switch 2 (본체 단품)",
+      "msrp": 648000,
+      "retailer": "옥션",
+      "url": "http://itempage3.auction.co.kr/DetailView.aspx?itemno=E962420166",
+      "checkedAt": "2026-07-07T01:46:52.851Z",
+      "price": null,
+      "priceAtOrBelowMsrp": null,
+      "stock": "unknown",
+      "error": null
+    }
+  ]
 }
