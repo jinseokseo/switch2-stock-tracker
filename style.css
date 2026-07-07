@@ -1,0 +1,172 @@
+:root {
+  --bg: #0f1115;
+  --panel: #171a21;
+  --border: #2a2e37;
+  --text: #e8e9ec;
+  --muted: #9aa0ab;
+  --accent: #e60012;
+  --green: #2fbf71;
+  --red: #e5484d;
+  --gray: #6b7280;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.page-header {
+  padding: 32px 20px 16px;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+}
+
+.page-header h1 {
+  margin: 0 0 8px;
+  font-size: 1.6rem;
+}
+
+.subtitle {
+  margin: 0 0 12px;
+  color: var(--muted);
+}
+
+.updated-at {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+main#app {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+}
+
+.loading {
+  text-align: center;
+  color: var(--muted);
+}
+
+.product-section {
+  margin-bottom: 32px;
+}
+
+.product-title {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.product-title h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.product-msrp {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.retailer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 12px;
+}
+
+.retailer-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.retailer-card.instock {
+  border-color: var(--green);
+}
+
+.retailer-name {
+  font-weight: 600;
+}
+
+.status-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.badge.instock {
+  background: rgba(47, 191, 113, 0.15);
+  color: var(--green);
+}
+
+.badge.soldout {
+  background: rgba(229, 72, 77, 0.15);
+  color: var(--red);
+}
+
+.badge.unknown {
+  background: rgba(107, 114, 128, 0.2);
+  color: var(--gray);
+}
+
+.badge.msrp-match {
+  background: rgba(230, 0, 18, 0.15);
+  color: var(--accent);
+}
+
+.price {
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.checked-at {
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.buy-link {
+  margin-top: 4px;
+  display: inline-block;
+  text-align: center;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.buy-link:hover {
+  opacity: 0.9;
+}
+
+.page-footer {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 16px 32px;
+  color: var(--muted);
+  font-size: 0.82rem;
+  text-align: center;
+}

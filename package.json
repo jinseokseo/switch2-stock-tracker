@@ -1,0 +1,13 @@
+{
+  "name": "switch2-stock-tracker",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "닌텐도 스위치2 정가 재고 조회 사이트",
+  "scripts": {
+    "check-stock": "node scripts/check-stock.mjs"
+  },
+  "dependencies": {
+    "playwright": "^1.47.0"
+  }
+}
