@@ -15,7 +15,41 @@ const IN_STOCK_PATTERNS = [/구매하기/, /바로\s*구매/, /장바구니\s*�
 const USER_AGENT =
   'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36';
 
-function extractPrice(text, msrp) {
+async function extractStructuredPrice(page) {
+  return page.evaluate(() => {
+    const metaSelectors = [
+      'meta[property="product:price:amount"]',
+      'meta[property="og:price:amount"]',
+      'meta[itemprop="price"]',
+      'meta[name="price"]',
+    ];
+    for (const sel of metaSelectors) {
+      const el = document.querySelector(sel);
+      const raw = el?.getAttribute('content') || el?.getAttribute('value');
+      const n = raw ? parseInt(String(raw).replace(/[^0-9]/g, ''), 10) : NaN;
+      if (Number.isFinite(n) && n > 0) return n;
+    }
+    const ldScripts = [...document.querySelectorAll('script[type="application/ld+json"]')];
+    for (const script of ldScripts) {
+      try {
+        const data = JSON.parse(script.textContent);
+        const items = Array.isArray(data) ? data : [data];
+        for (const item of items) {
+          const offers = item.offers ?? item['@graph']?.find((g) => g.offers)?.offers;
+          const offer = Array.isArray(offers) ? offers[0] : offers;
+          const raw = offer?.price ?? offer?.priceSpecification?.price;
+          const n = raw ? parseInt(String(raw).replace(/[^0-9]/g, ''), 10) : NaN;
+          if (Number.isFinite(n) && n > 0) return n;
+        }
+      } catch {
+        // ignore malformed JSON-LD blocks
+      }
+    }
+    return null;
+  });
+}
+
+function extractPriceFromText(text, msrp) {
   const matches = [...text.matchAll(/([0-9]{1,3}(?:,[0-9]{3})+)\s*원/g)].map((m) =>
     parseInt(m[1].replace(/,/g, ''), 10)
   );
@@ -51,10 +85,12 @@ async function checkTarget(browser, target, product) {
     await page.goto(target.url, { waitUntil: 'domcontentloaded', timeout: 30000 });
     await page.waitForTimeout(2500);
     const text = await page.innerText('body').catch(() => '');
-    const price = extractPrice(text, product.msrp);
+    const structuredPrice = await extractStructuredPrice(page).catch(() => null);
+    const price = structuredPrice ?? extractPriceFromText(text, product.msrp);
     return {
       ...base,
       price,
+      priceApproximate: structuredPrice === null && price !== null,
       priceAtOrBelowMsrp: price !== null ? price <= product.msrp : null,
       stock: detectStock(text),
       error: null,
@@ -63,6 +99,7 @@ async function checkTarget(browser, target, product) {
     return {
       ...base,
       price: null,
+      priceApproximate: null,
       priceAtOrBelowMsrp: null,
       stock: 'unknown',
       error: String(err?.message || err).slice(0, 300),

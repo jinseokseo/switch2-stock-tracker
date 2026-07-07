@@ -22,6 +22,7 @@ function buildKey(entry) {
 function renderCard(target, product, result) {
   const stock = result?.stock ?? 'unknown';
   const price = result?.price ?? null;
+  const priceApproximate = result?.priceApproximate ?? false;
   const priceAtOrBelowMsrp = result?.priceAtOrBelowMsrp ?? null;
   const checkedAt = result?.checkedAt ?? null;
 
@@ -51,7 +52,7 @@ function renderCard(target, product, result) {
 
   const priceEl = document.createElement('div');
   priceEl.className = 'price';
-  priceEl.textContent = formatWon(price);
+  priceEl.textContent = formatWon(price) + (priceApproximate ? ' (추정)' : '');
   card.appendChild(priceEl);
 
   const checkedEl = document.createElement('div');
