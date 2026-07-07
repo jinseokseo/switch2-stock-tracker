@@ -85,7 +85,11 @@ async function checkTarget(browser, target, product) {
     await page.goto(target.url, { waitUntil: 'domcontentloaded', timeout: 30000 });
     await page.waitForTimeout(2500);
     const text = await page.innerText('body').catch(() => '');
-    const structuredPrice = await extractStructuredPrice(page).catch(() => null);
+    let structuredPrice = await extractStructuredPrice(page).catch(() => null);
+    if (structuredPrice !== null && (structuredPrice < product.msrp * 0.4 || structuredPrice > product.msrp * 2)) {
+      // Structured metadata sometimes points at an unrelated price (coupon, related item, etc).
+      structuredPrice = null;
+    }
     const price = structuredPrice ?? extractPriceFromText(text, product.msrp);
     return {
       ...base,
