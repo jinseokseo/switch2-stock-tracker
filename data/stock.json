@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-09T16:31:35.784Z",
+  "updatedAt": "2026-09-09T19:27:07.101Z",
   "results": [
     {
       "productId": "switch2",
@@ -7,7 +7,7 @@
       "msrp": 648000,
       "retailer": "닌텐도 공식 스토어",
       "url": "https://store.nintendo.co.kr/beeskb6aakor",
-      "checkedAt": "2026-09-09T16:30:01.699Z",
+      "checkedAt": "2026-09-09T19:26:24.549Z",
       "price": 758000,
       "priceApproximate": false,
       "priceAtOrBelowMsrp": false,
@@ -20,7 +20,7 @@
       "msrp": 718000,
       "retailer": "닌텐도 공식 스토어",
       "url": "https://store.nintendo.co.kr/beeskb6nfkor",
-      "checkedAt": "2026-09-09T16:30:08.601Z",
+      "checkedAt": "2026-09-09T19:26:31.975Z",
       "price": 828000,
       "priceApproximate": false,
       "priceAtOrBelowMsrp": false,
@@ -33,7 +33,7 @@
       "msrp": 648000,
       "retailer": "쿠팡",
       "url": "https://www.coupang.com/vp/products/8825720068",
-      "checkedAt": "2026-09-09T16:30:15.745Z",
+      "checkedAt": "2026-09-09T19:26:38.676Z",
       "price": null,
       "priceApproximate": false,
       "priceAtOrBelowMsrp": null,
@@ -46,7 +46,7 @@
       "msrp": 718000,
       "retailer": "쿠팡",
       "url": "https://www.coupang.com/vp/products/9449804782",
-      "checkedAt": "2026-09-09T16:30:19.983Z",
+      "checkedAt": "2026-09-09T19:26:42.886Z",
       "price": null,
       "priceApproximate": false,
       "priceAtOrBelowMsrp": null,
@@ -59,12 +59,12 @@
       "msrp": 648000,
       "retailer": "11번가",
       "url": "https://www.11st.co.kr/products/8369248443",
-      "checkedAt": "2026-09-09T16:30:24.095Z",
+      "checkedAt": "2026-09-09T19:26:46.999Z",
       "price": null,
-      "priceApproximate": null,
+      "priceApproximate": false,
       "priceAtOrBelowMsrp": null,
       "stock": "unknown",
-      "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.11st.co.kr/products/8369248443\", waiting until \"domcontentloaded\"\n"
+      "error": null
     },
     {
       "productId": "switch2-pokopia",
@@ -72,12 +72,12 @@
       "msrp": 718000,
       "retailer": "11번가",
       "url": "https://www.11st.co.kr/products/9242538403",
-      "checkedAt": "2026-09-09T16:30:55.647Z",
+      "checkedAt": "2026-09-09T19:26:52.943Z",
       "price": null,
-      "priceApproximate": null,
+      "priceApproximate": false,
       "priceAtOrBelowMsrp": null,
       "stock": "unknown",
-      "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.11st.co.kr/products/9242538403\", waiting until \"domcontentloaded\"\n"
+      "error": null
     },
     {
       "productId": "switch2",
@@ -85,7 +85,7 @@
       "msrp": 648000,
       "retailer": "G마켓",
       "url": "https://item.gmarket.co.kr/Item?goodscode=4448997273",
-      "checkedAt": "2026-09-09T16:31:27.213Z",
+      "checkedAt": "2026-09-09T19:26:58.336Z",
       "price": null,
       "priceApproximate": false,
       "priceAtOrBelowMsrp": null,
@@ -98,7 +98,7 @@
       "msrp": 648000,
       "retailer": "옥션",
       "url": "http://itempage3.auction.co.kr/DetailView.aspx?itemno=E962420166",
-      "checkedAt": "2026-09-09T16:31:31.574Z",
+      "checkedAt": "2026-09-09T19:27:02.752Z",
       "price": null,
       "priceApproximate": false,
       "priceAtOrBelowMsrp": null,
